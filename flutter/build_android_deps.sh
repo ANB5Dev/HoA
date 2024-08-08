@@ -67,7 +67,9 @@ function build {
   echo "*** [$ANDROID_ABI][Start] Build and install vcpkg dependencies"
   pushd "$SCRIPTDIR/.."
   $VCPKG_ROOT/vcpkg install --triplet $VCPKG_TARGET --x-install-root="$VCPKG_ROOT/installed" || true
+  echo "===BEGIN issue_body.md==="
   cat /opt/artifacts/vcpkg/installed/vcpkg/issue_body.md
+  echo "===END issue_body.md==="
   popd
   echo "*** [$ANDROID_ABI][Finished] Build and install vcpkg dependencies"
 
