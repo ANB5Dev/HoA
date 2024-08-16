@@ -32,7 +32,7 @@ env:
   # vcpkg version: 2024.06.15
   VCPKG_COMMIT_ID: "f7423ee180c4b7f40d43402c2feb3859161ef625"
   VERSION: "1.2.7"
-  NDK_VERSION: "r26d"
+  NDK_VERSION: "r27"
   #signing keys env variable checks
   ANDROID_SIGNING_KEY: "${{ secrets.ANDROID_SIGNING_KEY }}"
   MACOS_P12_BASE64: "${{ secrets.MACOS_P12_BASE64 }}"
